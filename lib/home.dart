@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,6 +18,7 @@ class _HomePageState extends State<HomePage> {
           "Todo sqflite",
         ),
       ),
+      drawer: DrawerNavigation(),
     );
   }
 }
