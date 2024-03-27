@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do/home.dart';
 import 'package:to_do/models/category.dart';
@@ -81,7 +80,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
               color: Colors.white,
             )),
       ),
-      body: const Center(child: Text("welcoe to categorie page")),
+      body: const Center(child: Text("welcome to categorie page")),
       floatingActionButton: FloatingActionButton.small(
         onPressed: () {
           _showFormDialoge(context);
