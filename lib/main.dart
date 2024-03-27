@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:to_do/home.dart';
+import 'package:to_do/screens/note_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const NoteListScreen(),
     );
   }
 }
