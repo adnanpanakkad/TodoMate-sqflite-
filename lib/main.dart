@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:to_do/screens/note_detailes.dart';
+
 import 'package:to_do/screens/note_list.dart';
 
 void main() {
-  runApp(const MyApp());
+	runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
+	@override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const NoteListScreen(),
+	    title: 'NoteKeeper',
+	    debugShowCheckedModeBanner: false,
+	    theme: ThemeData(
+		    primarySwatch: Colors.deepPurple
+	    ),
+	    home: NoteList(),
     );
   }
 }
