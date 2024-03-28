@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do/screens/note_detailes.dart';
 import 'package:to_do/screens/note_list.dart';
 
 void main() {

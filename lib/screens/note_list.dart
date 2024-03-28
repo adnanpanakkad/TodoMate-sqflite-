@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do/screens/note_detailes.dart';
 
 class NoteListScreen extends StatefulWidget {
   const NoteListScreen({super.key});
@@ -20,7 +21,10 @@ class _NoteListScreenState extends State<NoteListScreen> {
       body: getNoteListView(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => NoteDetailes()));
+        },
         child: Icon(
           Icons.add,
         ),
